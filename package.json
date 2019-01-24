@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files *.css, *.html"
+    "start": "browser-sync start --server --files *.css, *.html",
+    "stylus": "stylus -u nib -c -w -o styles.css src/styles.styl"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/anabelmaresc/landing-html-css#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.5"
   }
 }

@@ -1,0 +1,218 @@
+// imports
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Oxygen:300,400,700'
+
+//fonts
+font = 'Montserrat', sans-serif
+font2 = 'Oxygen', sans-serif
+
+//colors
+color_orange = #e05c2a
+color_black = #272b36
+color_gray = #4a5061
+
+// responsive
+$xs = 30em
+$sm = 48em
+$md = 64em
+$lg = 75em
+
+//normalice
+*
+  margin 0
+  padding 0
+  border 0
+
+header
+  background-color color_black
+  text-align center
+  background url('assets/bg.jpg')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  color white
+  .&-container
+    display grid
+    grid-template-columns minmax(auto, 1024px)
+    justify-content center
+  .&-logo
+    padding 1em 0 6em 0
+    img
+      width 150px
+  .&-cta
+    color white
+    margin 0 auto
+    width 65%
+    h1
+      font-size 28px
+      font-family font
+      line-height 1.8em
+      letter-spacing 1.2px
+      font-weight 600
+      padding 0 0 1em 0
+    span
+      font-size 12px
+      font-family font2
+      font-weight 300
+      display block
+    button
+      font-family font2
+      margin 6em 0 4em 0
+.tools
+  background-color color_black
+  border-top .4em solid color_gray
+  color white
+  text-align center
+  padding 2em
+  &-container
+    display grid
+    grid-template-columns minmax(auto, 1024px)
+    justify-content center
+  &-title
+    padding 0 0 1.5em 0
+    margin 0 auto
+    width 80%
+    line-height 1.8em
+    h2
+      font-family font
+      font-size 16px
+      font-weight 200
+  &-items
+    font-family font2
+    display flex
+    justify-content space-between
+  &-item
+    width 120px
+    img
+      width 64px
+      padding 0 0 .5em 0
+    h3
+      font-size 10px
+      font-family font2
+      font-weight normal
+.performance
+  background-color color_orange
+  color white
+  padding 2em 0
+  &-container
+    display grid
+    grid-template-columns minmax(auto, 1024px)
+    justify-content center
+  &-content
+    margin 0 auto
+    width: 60%
+    text-align center
+    h2
+      font-family font2
+      font-size 18px
+      font-weight 200
+      line-height 1.8em
+.competences
+  padding 0 2em
+  &-container
+    display grid
+    grid-template-columns minmax(auto, 1024px)
+    justify-content center
+  &-content
+    display flex
+    justify-content space-between
+    padding 4em 0 2em 0
+  &-img
+    // margin-left -150px
+    img
+      width 600px
+  &-info
+    width 400px
+  &-title
+    text-align center
+    h2
+      font-family font
+      font-size 28px
+      text-transform uppercase
+    span
+      font-family font2
+      font-size 12px
+  &-break
+    height 4px
+    background-color color_orange
+    width 280px
+    margin 0 auto
+  &-desc
+    padding 1em 0
+  &-items
+    img
+      width 48px
+      margin 0 2em 1em 0
+    h3
+      color color_orange
+      font-size 16px
+      font-family font
+      font-weight 600
+    span
+      font-size 12px
+      font-family font2
+  &-item
+    display flex
+    justify-content space-between
+    padding .5em 0
+    &:nth-child(even)
+      margin-left 2em
+    &-content
+      width 100%
+footer
+  background-color color_black
+  color white
+  padding 2em 0
+  .&-container
+    display grid
+    grid-template-columns minmax(auto, 350px)
+    justify-content center
+  .&-title
+    text-align center
+    padding 0 0 1em 0
+    h2
+      font-family font
+      font-weight normal
+      font-size 18px
+      margin 0 0 2em 0
+    span
+      font-family font2
+      font-weight normal
+      font-size 12px
+  .&-form
+    &-item
+      display block
+      margin 1em 0
+    &-button
+      text-align center
+      padding .5em 0 0 0
+    &-phone
+      display flex
+      justify-content space-between
+      select
+        margin 0 .5em 0 0
+  label
+    display block
+    margin 0 0 .2em 0
+    font-family font2
+    text-transform uppercase
+    font-size 10px
+  select
+  input
+    display block
+    width 100%
+    margin .5 0
+    height 28px
+    border-radius 2px
+    outline 0
+  textarea
+    width 100%
+    height 80px
+    border-radius 4px
+    outline 0
+
+.btn
+  background-color color_orange
+  color white
+  padding 12px 24px
+  border-radius 6px
+  outline 0
