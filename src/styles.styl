@@ -30,6 +30,7 @@ header
   background-repeat no-repeat
   background-size cover
   color white
+  padding .5em
   .&-container
     display grid
     grid-template-columns minmax(auto, 1024px)
@@ -37,23 +38,32 @@ header
   .&-logo
     padding 1em 0 6em 0
     img
-      width 150px
+      width 200px
+      @media only screen and (min-width $xs)
+        width 150px
   .&-cta
     color white
-    margin 0 auto
-    width 65%
+    width 100%
+    @media only screen and (min-width $xs)
+      width 65%
+      margin 0 auto
     h1
-      font-size 28px
+      font-size 24px
       font-family font
-      line-height 1.8em
+      line-height 1.2em
       letter-spacing 1.2px
       font-weight 600
       padding 0 0 1em 0
+      @media only screen and (min-width $xs)
+        line-height 1.8em
+        font-size 28px
     span
-      font-size 12px
+      font-size 14px
       font-family font2
       font-weight 300
       display block
+      @media only screen and (min-width $xs)
+        font-size 12px
     button
       font-family font2
       margin 6em 0 4em 0
@@ -78,10 +88,15 @@ header
       font-weight 200
   &-items
     font-family font2
-    display flex
-    justify-content space-between
+    display block
+    @media only screen and (min-width $xs)
+      display flex
+      justify-content space-between
   &-item
-    width 120px
+    text-align center
+    padding 0 0 1em 0
+    @media only screen and (min-width $xs)
+      width 120px
     img
       width 64px
       padding 0 0 .5em 0
@@ -92,36 +107,50 @@ header
 .performance
   background-color color_orange
   color white
-  padding 2em 0
+  padding 1em
+  @media only screen and (min-width $xs)
+    padding 2em 0
   &-container
     display grid
     grid-template-columns minmax(auto, 1024px)
     justify-content center
   &-content
-    margin 0 auto
-    width: 60%
     text-align center
+    width 100%
+    @media only screen and (min-width $xs)
+      width 60%
+      margin 0 auto
     h2
       font-family font2
       font-size 18px
       font-weight 200
       line-height 1.8em
 .competences
-  padding 0 2em
+  padding 1em
+  @media only screen and (min-width $xs)
+    padding 0 2em
   &-container
     display grid
     grid-template-columns minmax(auto, 1024px)
     justify-content center
   &-content
-    display flex
-    justify-content space-between
-    padding 4em 0 2em 0
+    display block
+    @media only screen and (min-width $sm)
+      display flex
+      justify-content space-between
+      padding 4em 0 2em 0
   &-img
-    // margin-left -150px
+    text-align center
+    @media only screen and (min-width $xs)
+      text-align left
+    @media only screen and (min-width $sm)
+      margin-left -160px
+    @media only screen and (min-width $md)
+      margin-left 0
     img
-      width 600px
-  &-info
-    width 400px
+      width 300px
+      @media only screen and (min-width $xs)
+        width 600px
   &-title
     text-align center
     h2
@@ -154,14 +183,17 @@ header
     display flex
     justify-content space-between
     padding .5em 0
-    &:nth-child(even)
-      margin-left 2em
+    @media only screen and (min-width $sm)
+      &:nth-child(even)
+        margin-left 2em
     &-content
       width 100%
 footer
   background-color color_black
   color white
-  padding 2em 0
+  padding 1em
+  @media only screen and (min-width $xs)
+    padding 2em 0
   .&-container
     display grid
     grid-template-columns minmax(auto, 350px)
