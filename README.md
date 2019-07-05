@@ -1,11 +1,20 @@
-# landing-html-css
+# An elegant landing page using html-css
 
-### install Project
+This project is more than a landing page, because i'm using stylus for compiling css and it's amazing the way to organize de code using variables, imports and other details. 
+This landing page is 100% responsive. You can use it  to learn and make a lot of cool things.
+
+Clone, enjoy and give me a star!
+
+Preview:
+![](/preview.png)
+
+After clone this project you have to run:
+### Install project
 ```bash
 npm i
 ```
 
-### Live Reload
+### Live reload
 ```bash
 npm run start
 ```
