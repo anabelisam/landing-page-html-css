@@ -1,6 +1,7 @@
 # An elegant landing page using html-css
 
-This project is more than a landing page, because i'm using stylus for compiling css and it's amazing the way to organize de code using variables, imports and other details. 
+This project is more than a landing page, because i'm using stylus for compiling css and it's amazing the way to organize de code using variables, imports and other details.
+
 This landing page is 100% responsive. You can use it  to learn and make a lot of cool things.
 
 Clone, enjoy and give me a star!
