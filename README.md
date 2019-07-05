@@ -5,7 +5,7 @@ This landing page is 100% responsive. You can use it  to learn and make a lot of
 
 Clone, enjoy and give me a star!
 
-Preview:
+## Preview
 ![](/preview.png)
 
 After clone this project you have to run:
